@@ -1,0 +1,115 @@
+.index {
+  background-image: url(twintower2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-repeat: no-repeat;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.general {
+  background: black;
+  animation: vital;
+  animation-duration: 5s;
+  text-align: center;
+}
+.general ul li a {
+  text-transform: capitalize;
+  font-size: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #ffff;
+  animation: vital;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.general ul {
+  list-style: none;
+  display: inline-flex;
+}
+.general ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.general ul li:hover {
+  background: rgb(1, 4, 31);
+
+  border-radius: 3px;
+}
+.submenu {
+  display: none;
+}
+.general ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  background: rgb(1, 4, 31);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.general ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+}
+.general ul li:hover .submenu ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #ffff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.general ul li:hover .submenu ul li:last-child {
+  border-bottom: none;
+}
+
+.general ul li:hover .submenu ul li a:hover {
+  transform: rotateZ(50deg);
+  color: cadetblue;
+}
+
+@keyframes vital {
+  0% {
+    background: gold;
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    background: cornflowerblue;
+    transform: translate(10px, 10px);
+  }
+
+  75% {
+    background: purple;
+    transform: translate(10px, 10px);
+  }
+  100% {
+    background: lime;
+    transform: translate(10px, 10px);
+  }
+}
+
+.welcome {
+  font-size: 200px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.span {
+  margin: 50px;
+  font-size: 10px;
+}
+.about {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(0, 0, 10);
+  color: white;
+}
